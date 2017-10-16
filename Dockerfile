@@ -1,5 +1,5 @@
 FROM siuyin/go
-RUN apt update && apt-get install -y curl wget git tmux ansible
+RUN apt update && apt-get install -y curl wget git tmux ansible iputils-ping exuberant-ctags
 RUN adduser siuyin --disabled-password
 COPY .vimrc /home/siuyin/.vimrc
 RUN chown siuyin:siuyin /home/siuyin/.vimrc
