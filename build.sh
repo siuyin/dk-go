@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build -t siuyin/node .
+docker build -t siuyin/go .
