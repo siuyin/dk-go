@@ -4,6 +4,7 @@ syntax on
 filetype plugin indent on
 color ron
 set autowrite
+set nocompatible
 
 map <C-n> :cnext<CR>
 map <C-m> :cprev<CR>
