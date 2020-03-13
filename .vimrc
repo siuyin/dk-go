@@ -14,6 +14,7 @@ let g:go_metalinter_command = "golangci-lint"
 let g:go_metalinter_deadline = "10s"
 let g:go_fmt_command = "goimports"
 let g:go_pls_enabled = 1
+let g:go_rename_command = 'gopls'
 
 autocmd FileType go nmap <leader>b  <Plug>(go-build)
 autocmd FileType go nmap <leader>r  <Plug>(go-run)
