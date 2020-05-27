@@ -23,4 +23,7 @@ autocmd FileType go nmap <leader>r  <Plug>(go-run)
 set guifont=Source_Code_Pro:h11:cANSI:qDRAFT
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab autoindent
+autocmd FileType css  setlocal ts=2 sts=2 sw=2 expandtab autoindent
+autocmd FileType javascript setlocal ts=2 sts=2 sw=2 expandtab autoindent
 
