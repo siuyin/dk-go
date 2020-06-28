@@ -1,5 +1,5 @@
 FROM siuyin/ubuntu:build-essential
-RUN apt install -y vim
+RUN apt update -y; apt install -y vim
 ADD https://storage.googleapis.com/golang/go1.14.4.linux-amd64.tar.gz /usr/local/
 RUN tar -C /usr/local -xf /usr/local/go1.14.4.linux-amd64.tar.gz
 ENV GOPATH /go
