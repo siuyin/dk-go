@@ -1,8 +1,8 @@
 FROM siuyin/go
 RUN apt update && apt-get install -y curl wget git tmux ansible iputils-ping exuberant-ctags sudo
-ADD https://download.docker.com/linux/static/stable/x86_64/docker-19.03.6.tgz /
-RUN tar -C /usr/local/bin -xf /docker-19.03.6.tgz --strip-components=1 docker/docker
-RUN addgroup --gid 117 docker
+ADD https://download.docker.com/linux/static/stable/x86_64/docker-19.03.12.tgz /
+RUN tar -C /usr/local/bin -xf /docker-19.03.12.tgz --strip-components=1 docker/docker
+RUN addgroup --gid 999 docker
 RUN adduser siuyin --disabled-password
 RUN adduser siuyin docker
 COPY .vimrc /home/siuyin/.vimrc
