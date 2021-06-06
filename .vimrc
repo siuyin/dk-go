@@ -5,7 +5,7 @@ filetype plugin indent on
 color ron
 set autowrite
 set nocompatible
-set listchars+=space:·
+set listchars+=space:￮ "u+ffee
 
 map <C-n> :cnext<CR>
 map <C-m> :cprev<CR>
