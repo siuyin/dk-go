@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build -t siuyin/go .
+docker build -t siuyin/go:dev .
