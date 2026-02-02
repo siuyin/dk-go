@@ -1,7 +1,7 @@
 FROM siuyin/go
 RUN DEBIAN_FRONTEND=noninteractive apt update && DEBIAN_FRONTEND=noninteractive apt-get install -y curl wget git tmux ansible iputils-ping exuberant-ctags sudo file
-ADD https://download.docker.com/linux/static/stable/x86_64/docker-24.0.6.tgz /
-RUN tar -C /usr/local/bin -xf /docker-24.0.6.tgz --strip-components=1 docker/docker
+ADD https://download.docker.com/linux/static/stable/x86_64/docker-28.2.2.tgz /
+RUN tar -C /usr/local/bin -xf /docker-28.2.2.tgz --strip-components=1 docker/docker
 RUN addgroup --gid 133 docker
 RUN adduser siuyin --disabled-password
 RUN adduser siuyin docker
